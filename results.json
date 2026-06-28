@@ -9,6 +9,15 @@
       500
     ]
   },
-  "test_prepare_data": "IndexError('too many indices for tensor of dimension 2')\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_1172/1579568773.py\", line 59, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_1172/1579568773.py\", line 24, in test_prepare_data\n    'dev_texts_shape': dev_sequences[\"texts\"][\"input_ids\"].shape,\n                       ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^\nIndexError: too many indices for tensor of dimension 2\n",
-  "test_model": "Error('You must call wandb.init() before wandb.log()')\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_1172/1579568773.py\", line 59, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_1172/1579568773.py\", line 41, in test_model\n    results_eval = evaluate(trainer, \"Evaluation on Test Set\", test_ds, tag2id)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_1172/60750858.py\", line 65, in evaluate\n    wandb.log({\n  File \"/usr/local/lib/python3.12/dist-packages/wandb/sdk/lib/preinit.py\", line 39, in preinit_wrapper\n    raise wandb.Error(f\"You must call wandb.init() before {name}()\")\nwandb.errors.errors.Error: You must call wandb.init() before wandb.log()\n"
+  "test_prepare_data": {
+    "dev_texts_shape": [
+      250,
+      67
+    ],
+    "train_labels_shape": [
+      1750,
+      83
+    ]
+  },
+  "test_model": "KeyError('F1')\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_1172/1105594869.py\", line 59, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_1172/1105594869.py\", line 44, in test_model\n    'f1': results_eval['F1'],\n          ~~~~~~~~~~~~^^^^^^\nKeyError: 'F1'\n"
 }
