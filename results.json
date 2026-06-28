@@ -12,12 +12,15 @@
   "test_prepare_data": {
     "dev_texts_shape": [
       250,
-      67
+      61
     ],
     "train_labels_shape": [
       1750,
-      83
+      61
     ]
   },
-  "test_model": "KeyError('F1_WO_O')\nTraceback (most recent call last):\n  File \"/tmp/ipykernel_1172/1105594869.py\", line 59, in <cell line: 0>\n    cur_res = test()\n              ^^^^^^\n  File \"/tmp/ipykernel_1172/1105594869.py\", line 45, in test_model\n    'f1_wo_o': results_eval['F1_WO_O'],\n               ~~~~~~~~~~~~^^^^^^^^^^^\nKeyError: 'F1_WO_O'\n"
+  "test_model": {
+    "f1": 0.9858359256124208,
+    "f1_wo_o": 0.953113591388091
+  }
 }
